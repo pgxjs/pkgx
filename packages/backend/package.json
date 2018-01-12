@@ -1,0 +1,25 @@
+{
+  "name": "@pkx/backend",
+  "version": "0.0.0",
+  "description": "Backend on koa2 for PKX",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pkxjs/pkx.git"
+  },
+  "author": "Sergey Sova <mail@sergeysova.com> (https://sergeysova.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pkxjs/pkx/issues"
+  },
+  "homepage": "https://github.com/pkxjs/pkx#readme",
+  "dependencies": {
+    "@pkx/rest-api": "^0.0.0"
+  }
+}
