@@ -1,6 +1,6 @@
 {
   "name": "@pkx/frontend",
-  "version": "0.0.0",
+  "version": "0.0.0-initial",
   "description": "Frontend on react for PKX",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -19,6 +19,6 @@
   },
   "homepage": "https://github.com/pkxjs/pkx#readme",
   "dependencies": {
-    "@pkx/rest-api": "^0.0.0"
+    "@pkx/rest-api": "^0.0.0-initial"
   }
 }

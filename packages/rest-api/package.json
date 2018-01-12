@@ -1,6 +1,6 @@
 {
   "name": "@pkx/rest-api",
-  "version": "0.0.0",
+  "version": "0.0.0-initial",
   "description": "REST API handlers for PKX frontend and backend",
   "main": "index.js",
   "scripts": {
