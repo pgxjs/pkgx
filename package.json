@@ -9,6 +9,10 @@
   },
   "author": "Sergey Sova <mail@sergeysova.com> (https://sergeysova.com/)",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pkxjs/pkx.git"
+  },
   "bugs": {
     "url": "https://github.com/pkxjs/pkx/issues"
   },
