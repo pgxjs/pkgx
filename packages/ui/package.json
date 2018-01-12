@@ -4,7 +4,8 @@
   "description": "UI kit on React for PKX frontend",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test:lint": "eslint ."
   },
   "publishConfig": {
     "access": "public"
@@ -18,5 +19,21 @@
   "bugs": {
     "url": "https://github.com/pkxjs/pkx/issues"
   },
-  "homepage": "https://github.com/pkxjs/pkx#readme"
+  "homepage": "https://github.com/pkxjs/pkx#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.0.0-beta.37",
+    "@babel/core": "^7.0.0-beta.37",
+    "@babel/polyfill": "^7.0.0-beta.37",
+    "@storybook/react": "^3.3.8",
+    "prop-types": "^15.6.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "styled-components": "^2.4.0"
+  },
+  "peerDependencies": {
+    "react": "^16.2.0",
+    "styled-components": "^2.4.0",
+    "prop-types": "^15.6.0"
+  },
+  "dependencies": {}
 }

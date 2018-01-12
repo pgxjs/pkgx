@@ -4,7 +4,8 @@
   "description": "REST API handlers for PKX frontend and backend",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test:lint": "eslint ."
   },
   "publishConfig": {
     "access": "public"
@@ -18,5 +19,7 @@
   "bugs": {
     "url": "https://github.com/pkxjs/pkx/issues"
   },
-  "homepage": "https://github.com/pkxjs/pkx#readme"
+  "homepage": "https://github.com/pkxjs/pkx#readme",
+  "devDependencies": {},
+  "dependencies": {}
 }

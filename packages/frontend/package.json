@@ -3,7 +3,8 @@
   "version": "0.0.0-initial",
   "description": "Frontend on react for PKX",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test:lint": "eslint ."
   },
   "publishConfig": {
     "access": "public"
@@ -20,5 +21,6 @@
   "homepage": "https://github.com/pkxjs/pkx#readme",
   "dependencies": {
     "@pkx/rest-api": "^0.0.0-initial"
-  }
+  },
+  "devDependencies": {}
 }
