@@ -11,9 +11,9 @@ const preventAction = (event) => {
 }
 
 storiesOf('atoms/Link', module)
-  .add('Simple link', () => (
+  .add('Prevented link', () => (
     <Link href="//google.com" onClick={preventAction}>Google</Link>
   ))
-  .add('With real link', () => (
+  .add('Real link', () => (
     <Link href="//yandex.com" onClick={action('click yandex')}>Yandex</Link>
   ))
