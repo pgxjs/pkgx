@@ -16,17 +16,27 @@ export const Button = styled.button`
 
   font-family: 'Source Sans Pro', 'Lucida Grande', sans-serif;
   font-size: 18px;
+  font-weight: 600;
   line-height: 47px;
   cursor: pointer;
   text-align: center;
   vertical-align: middle;
 
-  height: 47px;
   padding: 0 35px;
   display: block;
 
   ${(p) => p.fullWidth && css`
     width: 100%;
+  `}
+
+  ${(p) => p.small && css`
+    line-height: 22px;
+    font-size: 14px;
+    padding: 5px 20px;
+  `}
+
+  ${(p) => p.rounded && css`
+    border-radius: ${(ps) => ps.small ? '22px' : '47px'};
   `}
 
   &:hover {
@@ -35,12 +45,20 @@ export const Button = styled.button`
 `
 
 Button.propTypes = {
+  fullWidth: PropTypes.bool,
+  small: PropTypes.bool,
+  rounded: PropTypes.bool,
+
   onClick: PropTypes.func,
   children: PropTypes.node,
   disabled: PropTypes.bool,
 }
 
 Button.defaultProps = {
+  fullWidth: false,
+  small: false,
+  rounded: false,
+
   onClick: null,
   children: '',
   disabled: false,
