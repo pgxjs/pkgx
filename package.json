@@ -5,7 +5,8 @@
   "scripts": {
     "postinstall": "lerna bootstrap",
     "build": "lerna run build",
-    "publish": "npm run build && lerna publish"
+    "publish": "npm run build && lerna publish",
+    "storybook": "lerna exec 'npm run storybook' --scope @pkx/ui"
   },
   "author": "Sergey Sova <mail@sergeysova.com> (https://sergeysova.com/)",
   "license": "MIT",
@@ -23,6 +24,7 @@
     "babel-eslint": "^8.2.1",
     "eslint": "^4.15.0",
     "flow-bin": "^0.63.1",
-    "lerna": "^2.7.0"
+    "lerna": "^2.7.0",
+    "typescript-styled-plugin": "^0.3.1"
   }
 }
