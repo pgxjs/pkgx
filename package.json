@@ -1,6 +1,6 @@
 {
   "name": "pkx-private",
-  "version": "null",
+  "version": "0.0.0",
   "description": "Monorepo",
   "scripts": {
     "postinstall": "lerna bootstrap",
