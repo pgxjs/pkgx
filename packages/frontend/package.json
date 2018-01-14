@@ -20,7 +20,8 @@
   },
   "homepage": "https://github.com/pkxjs/pkx#readme",
   "dependencies": {
-    "@pkx/rest-api": "^0.0.0-initial"
+    "@pkx/rest-api": "^0.0.0-initial",
+    "@pkx/ui": "^0.0.0-initial"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.0.0-beta.37"
