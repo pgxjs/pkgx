@@ -2,12 +2,20 @@
   "name": "@pkx/ui",
   "version": "0.0.0-initial",
   "description": "UI kit on React for PKX frontend",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "module": "dist-es/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "test:lint": "eslint .",
-    "storybook": "start-storybook -p 9001 -c .storybook"
+    "storybook": "start-storybook -p 9001 -c .storybook",
+    "build:base": "babel ./src -d ./dist --delete-dir-on-start --ignore **/*.story.js",
+    "build:mjs": "babel ./src -d ./dist-es --env-name mjs --delete-dir-on-start --ignore **/*.story.js",
+    "build": "npm run build:base && npm rub build:mjs"
   },
+  "files": [
+    "dist",
+    "dist-es"
+  ],
   "publishConfig": {
     "access": "public"
   },
@@ -25,19 +33,22 @@
     "@babel/cli": "^7.0.0-beta.37",
     "@babel/core": "^7.0.0-beta.37",
     "@babel/polyfill": "^7.0.0-beta.37",
+    "@babel/preset-env": "^7.0.0-beta.37",
+    "@storybook/addon-actions": "^3.3.8",
     "@storybook/react": "^3.3.8",
+    "babel-core": "^6.26.0",
     "prop-types": "^15.6.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
-    "styled-components": "^2.4.0",
-    "@storybook/addon-actions": "^3.3.8",
-    "babel-core": "^6.26.0"
+    "styled-components": "^2.4.0"
   },
   "peerDependencies": {
+    "prop-types": "^15.6.0",
     "react": "^16.2.0",
-    "styled-components": "^2.4.0",
-    "prop-types": "^15.6.0"
+    "styled-components": "^2.4.0"
   },
   "dependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.0.0-beta.37",
+    "@babel/preset-react": "^7.0.0-beta.37"
   }
 }
