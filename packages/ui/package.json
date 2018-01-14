@@ -10,7 +10,7 @@
     "storybook": "start-storybook -p 9001 -c .storybook",
     "build:base": "babel ./src -d ./dist --delete-dir-on-start --ignore **/*.story.js",
     "build:mjs": "babel ./src -d ./dist-es --env-name mjs --delete-dir-on-start --ignore **/*.story.js",
-    "build": "npm run build:base && npm rub build:mjs"
+    "build": "npm run build:base && npm run build:mjs"
   },
   "files": [
     "dist",
