@@ -8,8 +8,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "test:lint": "eslint .",
     "storybook": "start-storybook -p 9001 -c .storybook",
-    "build:base": "babel ./src -d ./dist --delete-dir-on-start --ignore **/*.story.js",
-    "build:mjs": "babel ./src -d ./dist-es --env-name mjs --delete-dir-on-start --ignore **/*.story.js",
+    "babel": "babel ./src --delete-dir-on-start --ignore **/*.story.js --config-file ./build.babelrc",
+    "build:base": "npm run babel -- -d ./dist",
+    "build:mjs": "npm run babel -- -d ./dist-es --env-name mjs",
     "build": "npm run build:base && npm run build:mjs"
   },
   "files": [
