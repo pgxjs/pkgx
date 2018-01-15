@@ -16,7 +16,7 @@
     "dist",
     "static"
   ],
-  "repository": "https: //github.com/pkxjs/pkx/tree/master/packages/frontend",
+  "repository": "https://github.com/pkxjs/pkx/tree/master/packages/frontend",
   "author": "Sergey Sova <mail@sergeysova.com> (https://sergeysova.com/)",
   "license": "MIT",
   "bugs": {

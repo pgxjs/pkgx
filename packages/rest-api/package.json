@@ -10,7 +10,7 @@
   "publishConfig": {
     "access": "public"
   },
-  "repository": "https: //github.com/pkxjs/pkx/tree/master/packages/rest-api",
+  "repository": "https://github.com/pkxjs/pkx/tree/master/packages/rest-api",
   "author": "Sergey Sova <mail@sergeysova.com> (https://sergeysova.com/)",
   "license": "MIT",
   "bugs": {

@@ -21,7 +21,7 @@
   "publishConfig": {
     "access": "public"
   },
-  "repository": "https: //github.com/pkxjs/pkx/tree/master/packages/ui",
+  "repository": "https://github.com/pkxjs/pkx/tree/master/packages/ui",
   "author": "Sergey Sova <i.am@lestad.net> (https://lestad.top)",
   "license": "MIT",
   "bugs": {

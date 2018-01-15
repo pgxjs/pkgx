@@ -9,7 +9,7 @@
   "publishConfig": {
     "access": "public"
   },
-  "repository": "https: //github.com/pkxjs/pkx/tree/master/packages/config",
+  "repository": "https://github.com/pkxjs/pkx/tree/master/packages/config",
   "author": "Sergey Sova <mail@sergeysova.com> (https://sergeysova.com)",
   "license": "MIT"
 }
