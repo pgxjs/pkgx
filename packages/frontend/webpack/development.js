@@ -7,6 +7,7 @@ const {
   HotModuleReplacementPlugin,
 } = require('webpack')
 const webpackMerge = require('webpack-merge')
+const AssetsPlugin = require('assets-webpack-plugin')
 const commonConfig = require('./common')
 
 
@@ -31,6 +32,10 @@ module.exports = webpackMerge(commonConfig, {
     new NamedModulesPlugin(),
     new EnvironmentPlugin({
       NODE_ENV: process.env.NODE_ENV || 'development',
+    }),
+    new AssetsPlugin({
+      filename: 'assets.json',
+      path: resolve(__dirname, '..', 'dist'),
     }),
   ],
 
