@@ -25,6 +25,7 @@
   "homepage": "https://github.com/pkxjs/pkx#readme",
   "dependencies": {
     "@pkx/config": "0.0.0",
+    "@pkx/frontend": "^0.0.2",
     "@pkx/rest-api": "0.0.1",
     "createrest": "^0.14.2",
     "createrest-koa": "^0.14.2",
