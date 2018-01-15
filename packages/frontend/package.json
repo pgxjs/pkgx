@@ -3,7 +3,7 @@
   "version": "0.0.2",
   "description": "Frontend on react for PKX",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "npm run test:lint",
     "test:lint": "eslint .",
     "build": "webpack",
     "dev": "webpack-dev-server --colors"
