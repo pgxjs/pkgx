@@ -10,7 +10,8 @@
     "build": "lerna run build",
     "routes": "lerna run routes",
     "publish": "npm run build && lerna publish",
-    "storybook": "lerna exec 'npm run storybook' --scope @pkx/ui"
+    "storybook": "lerna exec 'npm run storybook' --scope @pkx/ui",
+    "clean": "lerna run clean"
   },
   "author": "Sergey Sova <mail@sergeysova.com> (https://sergeysova.com/)",
   "license": "MIT",

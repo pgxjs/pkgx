@@ -11,7 +11,8 @@
     "babel": "babel ./src --delete-dir-on-start --ignore **/*.story.js --config-file ./build.babelrc",
     "build:base": "npm run babel -- -d ./dist",
     "build:mjs": "npm run babel -- -d ./dist-es --env-name mjs",
-    "build": "npm run build:base && npm run build:mjs"
+    "build": "npm run build:base && npm run build:mjs",
+    "clean": "rm -rf dist dist-es"
   },
   "files": [
     "dist",
