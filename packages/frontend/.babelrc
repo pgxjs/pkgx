@@ -14,7 +14,8 @@
     "@babel/preset-react"
   ],
   "plugins": [
-    "@babel/plugin-proposal-class-properties"
+    "@babel/plugin-proposal-class-properties",
+    "@babel/plugin-proposal-object-rest-spread"
   ],
   "env": {
     "mjs": {
@@ -32,6 +33,9 @@
             "loose": true
           }
         ]
+      ],
+      "plugins": [
+        "@babel/plugin-proposal-object-rest-spread"
       ]
     }
   }

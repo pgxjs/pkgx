@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { BrowserRouter } from 'react-router-dom'
+import { Button } from '@pkx/ui'
 
 
 const rootElement = document.getElementById('root')
@@ -9,7 +10,10 @@ const render = () => {
   ReactDOM.render(
     (
       <BrowserRouter>
-        <div>Example s</div>
+        <div>
+          <div>Example</div>
+          <Button>Hello PKX</Button>
+        </div>
       </BrowserRouter>
     ), rootElement,
   )

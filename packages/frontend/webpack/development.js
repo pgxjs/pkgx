@@ -20,7 +20,17 @@ module.exports = webpackMerge(commonConfig, {
 
   module: {
     rules: [
+      {
+        test: /@pkx\/ui/,
+        loader: 'babel-loader',
+      },
     ],
+  },
+
+  resolve: {
+    alias: {
+      '@pkx/ui': resolve(__dirname, '..', 'node_modules', '@pkx', 'ui', 'src'),
+    },
   },
 
   plugins: [
