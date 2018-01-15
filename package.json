@@ -3,9 +3,12 @@
   "version": "0.0.0",
   "description": "Monorepo",
   "scripts": {
-    "dev": "lerna exec 'npm run dev' --scope @pkx/frontend",
+    "dev:frontend": "lerna exec 'npm run dev' --scope @pkx/frontend",
+    "dev:backend": "lerna exec 'npm run dev' --scope @pkx/backend",
+    "dev": "concurrently 'npm run dev:frontend' 'npm run dev:backend' --names 'front,back'",
     "postinstall": "lerna bootstrap",
     "build": "lerna run build",
+    "routes": "lerna run routes",
     "publish": "npm run build && lerna publish",
     "storybook": "lerna exec 'npm run storybook' --scope @pkx/ui"
   },
@@ -23,6 +26,7 @@
     "@atomix/eslint-config": "^6.1.1",
     "@atomix/eslint-config-react": "^6.1.1",
     "babel-eslint": "^8.2.1",
+    "concurrently": "^3.5.1",
     "eslint": "^4.15.0",
     "flow-bin": "^0.63.1",
     "lerna": "^2.7.0",
