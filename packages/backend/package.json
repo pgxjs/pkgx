@@ -13,10 +13,7 @@
   "publishConfig": {
     "access": "public"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/pkxjs/pkx.git"
-  },
+  "repository": "https: //github.com/pkxjs/pkx/tree/master/packages/backend",
   "author": "Sergey Sova <mail@sergeysova.com> (https://sergeysova.com/)",
   "license": "MIT",
   "bugs": {
