@@ -4,7 +4,7 @@
   "description": "Backend on koa2 for PKX",
   "main": "src/index.js",
   "scripts": {
-    "dev": "nodemon -w src ./bin/www",
+    "dev": "NODE_ENV=development DEBUG=pkx:* nodemon -w src ./bin/www",
     "start": "./bin/www",
     "test": "echo \"Error: no test specified\" && exit 1",
     "test:lint": "eslint .",
