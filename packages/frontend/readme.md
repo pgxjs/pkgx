@@ -6,6 +6,10 @@
 
 Starts `webpack-dev-server`.
 
+### `build`
+
+Executes `webpack` without arguments.
+
 ## Structure
 
 - `./src` contains source files
