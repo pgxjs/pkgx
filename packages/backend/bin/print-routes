@@ -1,0 +1,7 @@
+#!/usr/bin/env node
+
+const { printRoutes } = require('createrest')
+const { routes } = require('../src/routes')
+
+
+printRoutes(routes)

@@ -2,10 +2,13 @@
   "name": "@pkx/backend",
   "version": "0.0.1",
   "description": "Backend on koa2 for PKX",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
+    "dev": "nodemon -w src ./bin/www",
+    "start": "./bin/www",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "test:lint": "eslint ."
+    "test:lint": "eslint .",
+    "routes": "./bin/print-routes"
   },
   "publishConfig": {
     "access": "public"
@@ -21,9 +24,15 @@
   },
   "homepage": "https://github.com/pkxjs/pkx#readme",
   "dependencies": {
-    "@pkx/rest-api": "^0.0.1"
+    "@pkx/config": "0.0.0",
+    "@pkx/rest-api": "0.0.1",
+    "createrest": "^0.14.2",
+    "createrest-koa": "^0.14.2",
+    "debug": "^3.1.0",
+    "koa": "^2.4.1",
+    "koa-router": "^7.3.0"
   },
   "devDependencies": {
-    "@babel/preset-env": "^7.0.0-beta.37"
+    "nodemon": "^1.14.11"
   }
 }

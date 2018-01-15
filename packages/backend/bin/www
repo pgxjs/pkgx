@@ -1,0 +1,14 @@
+#!/usr/bin/env node
+const debug = require('debug')('pkx:bin')
+const { start } = require('../src')
+
+
+start()
+  .then(() => {
+    debug('Application successfully started')
+  })
+  .catch((error) => {
+    debug('Failed to start', error)
+    // eslint-disable-next-line no-console
+    console.error('PKX: Failed to start application', error.message)
+  })
