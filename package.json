@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "description": "Monorepo",
   "scripts": {
+    "dev": "lerna exec 'npm run dev' --scope @pkx/frontend",
     "postinstall": "lerna bootstrap",
     "build": "lerna run build",
     "publish": "npm run build && lerna publish",
