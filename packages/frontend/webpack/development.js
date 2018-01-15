@@ -8,6 +8,10 @@ const {
 } = require('webpack')
 const webpackMerge = require('webpack-merge')
 const AssetsPlugin = require('assets-webpack-plugin')
+
+// TODO remove that hack
+const uiBabelConfig = require('@pkx/ui/build.babelrc.json')
+
 const commonConfig = require('./common')
 
 
@@ -23,6 +27,7 @@ module.exports = webpackMerge(commonConfig, {
       {
         test: /@pkx\/ui/,
         loader: 'babel-loader',
+        options: uiBabelConfig,
       },
     ],
   },
