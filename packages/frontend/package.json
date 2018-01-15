@@ -1,6 +1,6 @@
 {
   "name": "@pkx/frontend",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Frontend on react for PKX",
   "scripts": {
     "test": "npm run test:lint",
@@ -24,8 +24,8 @@
   },
   "homepage": "https://github.com/pkxjs/pkx#readme",
   "dependencies": {
-    "@pkx/rest-api": "^0.0.2",
-    "@pkx/ui": "^0.0.3",
+    "@pkx/rest-api": "^0.0.3",
+    "@pkx/ui": "^0.0.4",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-router-dom": "^4.2.2",
@@ -39,8 +39,8 @@
     "@babel/polyfill": "^7.0.0-beta.37",
     "@babel/preset-env": "^7.0.0-beta.37",
     "@babel/preset-react": "^7.0.0-beta.37",
-    "@pkx/config": "^0.0.1",
-    "@pkx/ui": "^0.0.3",
+    "@pkx/config": "^0.0.2",
+    "@pkx/ui": "^0.0.4",
     "assets-webpack-plugin": "^3.5.1",
     "babel-loader": "8.0.0-beta.0",
     "html-webpack-plugin": "^2.30.1",

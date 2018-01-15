@@ -1,6 +1,6 @@
 {
   "name": "@pkx/config",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Package holds configuration for PKX",
   "main": "index.js",
   "scripts": {

@@ -1,6 +1,6 @@
 {
   "name": "@pkx/backend",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Backend on koa2 for PKX",
   "main": "src/index.js",
   "scripts": {
@@ -21,9 +21,9 @@
   },
   "homepage": "https://github.com/pkxjs/pkx#readme",
   "dependencies": {
-    "@pkx/config": "^0.0.1",
-    "@pkx/frontend": "^0.0.3",
-    "@pkx/rest-api": "^0.0.2",
+    "@pkx/config": "^0.0.2",
+    "@pkx/frontend": "^0.0.4",
+    "@pkx/rest-api": "^0.0.3",
     "createrest": "^0.14.2",
     "createrest-koa": "^0.14.2",
     "debug": "^3.1.0",
