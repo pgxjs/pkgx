@@ -50,7 +50,7 @@ Button.propTypes = {
   rounded: PropTypes.bool,
 
   onClick: PropTypes.func,
-  children: PropTypes.node,
+  children: PropTypes.node.isRequired,
   disabled: PropTypes.bool,
 }
 
@@ -60,7 +60,6 @@ Button.defaultProps = {
   rounded: false,
 
   onClick: null,
-  children: '',
   disabled: false,
 }
 
