@@ -11,7 +11,7 @@ const app = new Koa()
 app.use(router.routes(), router.allowedMethods())
 
 async function start() {
-  app.listen(BACKEND_PORT, () => {
+  return app.listen(BACKEND_PORT, () => {
     // eslint-disable-next-line no-console
     console.log(`Listening port ${BACKEND_PORT}...`)
   })
@@ -19,4 +19,5 @@ async function start() {
 
 module.exports = {
   start,
+  app,
 }
