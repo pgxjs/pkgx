@@ -2,8 +2,8 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@pkx/ui": ["../ui"],
-      "@pkx/config": ["../config"],
+      "@pkx/ui": ["../ui/src"],
+      "@pkx/config": ["../config/"],
       "@pkx/rest-api": ["../rest-api"]
     }
   }

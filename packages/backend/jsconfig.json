@@ -3,7 +3,7 @@
     "baseUrl": ".",
     "paths": {
       "@pkx/frontend": [
-        "../frontend"
+        "../frontend/src"
       ],
       "@pkx/config": [
         "../config"
