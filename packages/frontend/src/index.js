@@ -1,10 +1,14 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { BrowserRouter } from 'react-router-dom'
-import { Button } from '@pkx/ui'
+import { injectGlobal } from 'styled-components'
+import { Button, globalStyles } from '@pkx/ui'
 
 
 const rootElement = document.getElementById('root')
+
+// eslint-disable-next-line no-unused-expressions
+injectGlobal`${globalStyles}`
 
 const render = () => {
   ReactDOM.render(
