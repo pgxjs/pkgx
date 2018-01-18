@@ -22,7 +22,8 @@
           },
           "modules": false,
           "loose": true
-        }]
+        }],
+        "@babel/preset-react"
       ]
     }
   }

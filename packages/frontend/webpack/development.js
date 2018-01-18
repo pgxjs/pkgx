@@ -10,8 +10,7 @@ const webpackMerge = require('webpack-merge')
 const AssetsPlugin = require('assets-webpack-plugin')
 
 // TODO remove that hack
-const uiBabelConfig = require('@pkx/ui/build.babelrc.json')
-
+const uiBabelConfig = require('../../ui/build.babelrc.json')
 const commonConfig = require('./common')
 
 
@@ -25,7 +24,11 @@ module.exports = webpackMerge(commonConfig, {
   module: {
     rules: [
       {
-        test: /@pkx\/ui/,
+        test: /\.m?js$/,
+
+        include: [
+          resolve(__dirname, '..', '..', 'ui', 'src'),
+        ],
         loader: 'babel-loader',
         options: uiBabelConfig,
       },
@@ -34,7 +37,7 @@ module.exports = webpackMerge(commonConfig, {
 
   resolve: {
     alias: {
-      '@pkx/ui': resolve(__dirname, '..', 'node_modules', '@pkx', 'ui', 'src'),
+      '@pkx/ui': resolve(__dirname, '..', '..', 'ui', 'src'),
     },
   },
 
