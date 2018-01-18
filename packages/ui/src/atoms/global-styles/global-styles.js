@@ -27,7 +27,7 @@ export const globalStyles = css`
     line-height: 22px;
 
     margin: 0;
-    min-height: 100%
+    min-height: 100%;
 
     display: flex;
     justify-content: space-between;
