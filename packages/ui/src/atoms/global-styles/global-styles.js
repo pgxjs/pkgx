@@ -30,7 +30,12 @@ export const globalStyles = css`
     min-height: 100%;
 
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
   }
 
+  #root {
+    display: flex;
+    flex-direction: column;
+  }
 `
