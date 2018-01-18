@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@pkx/frontend": [
+        "../frontend"
+      ],
+      "@pkx/config": [
+        "../config"
+      ],
+      "@pkx/rest-api": [
+        "../rest-api"
+      ]
+    }
+  }
+}
