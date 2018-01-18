@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import { BrowserRouter } from 'react-router-dom'
 import { injectGlobal } from 'styled-components'
-import { Button, globalStyles } from '@pkx/ui'
+import { Button, globalStyles, ApplicationTemplate } from '@pkx/ui'
 
 
 const rootElement = document.getElementById('root')
@@ -14,10 +14,10 @@ const render = () => {
   ReactDOM.render(
     (
       <BrowserRouter>
-        <div>
+        <ApplicationTemplate>
           <div>Example</div>
           <Button>Hello PKX</Button>
-        </div>
+        </ApplicationTemplate>
       </BrowserRouter>
     ), rootElement,
   )
